@@ -1,0 +1,9 @@
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = git@github.com:ohmyzsh/ohmyzsh.git
+[submodule "vim_runtime"]
+	path = vim_runtime
+	url = git@github.com:amix/vimrc.git
+[submodule "fzf"]
+	path = fzf
+	url = git@github.com:junegunn/fzf.git
