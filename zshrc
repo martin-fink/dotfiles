@@ -143,7 +143,7 @@ alias vi=nvim
 
 source /Users/martin/Library/Preferences/org.dystroy.broot/launcher/bash/br
 
-[ -f ./fzf.zsh ] && source ./fzf.zsh
+[ -f $HOME/dotfiles/fzf.zsh ] && source $HOME/dotfiles/fzf.zsh
 
 
 export HOMEBREW_NO_AUTO_UPDATE=1
