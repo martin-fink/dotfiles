@@ -114,42 +114,16 @@ LC_ALL=en_DE.UTF-8
 #
 # Example aliases
 alias zshconfig="nvim ~/.zshrc && source ~/.zshrc"
-# alias ohmyzsh="vim ~/.oh-my-zsh"
-
-alias c='clear'
 
 alias ls='exa --icons'
-alias dir='dir --color=auto'
-alias vdir='vdir --color=auto'
-
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
 
 alias ll='ls -lah'
 alias la='ls -A'
 
-alias wanip='dig @resolver1.opendns.com ANY myip.opendns.com +short'
-
 # needed to sign git commits with gpg2
 export GPG_TTY=$(tty)
 
-ssh-add -K 2> /dev/null
-
-alias konvertovpn='sudo openconnect --authgroup=ROL-Mitarbeiter -u "DROL\sfinm" --juniper https://access.argo.bz.it/rol --servercert sha256:9950cbad61d5547ff9359c128bc851017e3a85ee040b8c46dabb42efa055fe4e'
-
-alias vi=nvim
-
-
-source /Users/martin/Library/Preferences/org.dystroy.broot/launcher/bash/br
-
 [ -f $HOME/dotfiles/fzf.zsh ] && source $HOME/dotfiles/fzf.zsh
 
-
 export HOMEBREW_NO_AUTO_UPDATE=1
-
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
