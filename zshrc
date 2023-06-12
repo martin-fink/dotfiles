@@ -14,7 +14,7 @@ export ZSH=$HOME/dotfiles/oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-if [[ $TERM == xterm-256color ]]; then
+if [[ $TERM == xterm-256color || $TERM == screen-256color ]]; then
     #ZSH_THEME="agnoster"
     #ZSH_THEME="bullet-train"
     ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -29,6 +29,24 @@ if [[ $TERM == xterm-256color ]]; then
     POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=5
     POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
     POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+
+    case $(hostname) in
+        mail.baey.eu)
+            typeset -g POWERLEVEL9K_DIR_BACKGROUND=011
+	    ;;
+        ryan)
+            typeset -g POWERLEVEL9K_DIR_BACKGROUND=129
+            ;;
+        graham)
+            typeset -g POWERLEVEL9K_DIR_BACKGROUND=159
+            ;;
+        yasmin)
+            typeset -g POWERLEVEL9K_DIR_BACKGROUND=199
+            ;;
+        rose)
+            typeset -g POWERLEVEL9K_DIR_BACKGROUND=009
+            ;;
+    esac
 
 else
     ZSH_THEME="alanpeabody"
