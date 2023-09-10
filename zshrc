@@ -145,3 +145,9 @@ export GPG_TTY=$(tty)
 
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+tmux-ssh() {
+    # fix things like SSH_AUTH_SOCK after ssh timeouts
+    eval $(tmux show-env -s)
+}
+
+
